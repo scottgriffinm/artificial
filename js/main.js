@@ -1,15 +1,5 @@
 (()=>{
     'use strict';
-    const orbiter = document.getElementById('artificial');
-    const emotion = window.emotion = ( mood='happy', mode='' ) => {
-        let md = emotion.mood = mood || emotion.mood || 'happy';
-        let de = emotion.mode = mode || emotion.mode || '';
-        orbiter.className = 'mood-' + md + ' '+ de;
-    };
-})();
-
-(()=>{
-    'use strict';
     visibility( e => { if (visibility()) location.reload() } );
 })();
 
@@ -77,10 +67,7 @@
         console.log('Error listening.');
     };
 
-    // Greating
-    subtitle('Hi.');
-    voice.speak('Hi.')
-    emotion( 'happy', 'talking' );
+   
     setTimeout( voice.listen, 1000 );
 
     // Receive Remote Commands

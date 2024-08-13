@@ -20,7 +20,6 @@
         event.cancelBubble = true;
         event.preventDefault  && event.preventDefault();
         event.stopPropagation && event.stopPropagation();
-        sounds.play( 'sounds/ding', 400 );
     } );
 
     window.story.event = ( phrase, callback ) => events[phrase] = callback;
